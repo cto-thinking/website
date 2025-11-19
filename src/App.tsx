@@ -9,6 +9,7 @@ import About from './components/About'
 import ComparisonTable from './components/ComparisonTable'
 import FooterCTA from './components/FooterCTA'
 import ChatInterface from './components/ChatInterface'
+import InteractiveBackground from './components/InteractiveBackground'
 
 function App() {
   const [view, setView] = useState<'landing' | 'chat'>('landing')
@@ -18,7 +19,8 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 font-sans">
+    <div className="min-h-screen bg-white dark:bg-gray-900 font-sans relative overflow-hidden">
+      <InteractiveBackground />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +40,7 @@ function App() {
         </div>
       </nav>
 
-      <main>
+      <main className="relative z-10">
         <Hero onGetStarted={() => setView('chat')} />
         <UseCases />
         <StructureFeatures />
@@ -49,7 +51,7 @@ function App() {
         <FooterCTA onGetStarted={() => setView('chat')} />
       </main>
 
-      <footer className="bg-black py-8 border-t border-gray-800">
+      <footer className="bg-black py-8 border-t border-gray-800 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500">
           <p className="font-bold text-white mb-2">IMOVERTHINKN</p>
           <p>© {new Date().getFullYear()} IMOVERTHINKN. All rights reserved.</p>

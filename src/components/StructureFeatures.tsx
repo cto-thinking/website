@@ -26,7 +26,7 @@ export default function StructureFeatures() {
     ];
 
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section className="py-20 relative">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -44,7 +44,7 @@ export default function StructureFeatures() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: idx * 0.1 }}
-                            className="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-shadow"
+                            className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-shadow"
                         >
                             <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
                                 <feature.icon className="w-6 h-6 text-gray-900 dark:text-white" />

@@ -12,7 +12,7 @@ export default function UseCases() {
     ];
 
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section className="py-20 relative">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
@@ -23,7 +23,7 @@ export default function UseCases() {
                     </p>
                 </div>
 
-                <div className="bg-gray-50 dark:bg-gray-800/50 rounded-3xl p-8 md:p-12 border border-gray-100 dark:border-gray-700">
+                <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-gray-100 dark:border-gray-700">
                     <div className="grid gap-6">
                         {cases.map((item, idx) => (
                             <motion.div
