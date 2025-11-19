@@ -23,7 +23,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
                         Untangle your thought spirals. For real this time.
                     </h1>
 
-                    <div className="my-12 flex justify-center items-center gap-4 md:gap-8 overflow-x-auto px-4">
+                    <div className="my-12 grid grid-cols-2 place-items-center gap-4 px-4 md:flex md:justify-center md:items-center md:gap-8">
                         <img src={ot1} alt="Overthinking illustration 1" className="h-32 md:h-40 w-auto object-contain" />
                         <img src={ot2} alt="Overthinking illustration 2" className="h-32 md:h-40 w-auto object-contain" />
                         <img src={ot3} alt="Overthinking illustration 3" className="h-32 md:h-40 w-auto object-contain" />
