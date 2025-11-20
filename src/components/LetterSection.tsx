@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import stampImg from '../assets/stamp.png';
+import { redirectToApp } from '../helpers/helpers';
 
 const LetterSection: React.FC = () => {
     return (
@@ -64,6 +65,7 @@ const LetterSection: React.FC = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
+                            onClick={redirectToApp}
                             className="bg-accent hover:bg-accent-hover text-black font-bold py-3 px-10 rounded-full shadow-lg text-xl"
                         >
                             Dive in!

@@ -1,5 +1,6 @@
 import { Check, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { redirectToApp } from '../helpers/helpers';
 
 export default function ComparisonTable() {
     const features = [
@@ -125,6 +126,7 @@ export default function ComparisonTable() {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={redirectToApp}
                         className="px-6 py-2.5 rounded-full bg-accent text-gray-900 font-bold text-base md:text-lg hover:bg-accent-hover transition-colors shadow-lg shadow-accent/20"
                     >
                         I need this yesterday

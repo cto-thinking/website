@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
+import { redirectToApp } from './helpers/helpers'
 // import UseCases from './components/UseCases'
 // import StructureFeatures from './components/StructureFeatures'
 // import About from './components/About'
@@ -8,19 +9,12 @@ import Hero from './components/Hero'
 import ProfeshFeatures from './components/ProfeshFeatures'
 import ComparisonTable from './components/ComparisonTable'
 import FooterCTA from './components/FooterCTA'
-import ChatInterface from './components/ChatInterface'
 import InteractiveBackground from './components/InteractiveBackground'
 import FrameSection from './components/FrameSection'
 import LetterSection from './components/LetterSection'
 import ImageShowcase from './components/ImageShowcase'
 
 function App() {
-  const [view, setView] = useState<'landing' | 'chat'>('landing')
-
-  if (view === 'chat') {
-    return <ChatInterface onBack={() => setView('landing')} />
-  }
-
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 font-sans relative overflow-hidden">
       <InteractiveBackground />
@@ -33,7 +27,7 @@ function App() {
             </div>
             <div>
               <button
-                onClick={() => setView('chat')}
+                onClick={redirectToApp}
                 className="px-4 py-2 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-medium text-sm hover:opacity-90 transition-opacity"
               >
                 Log in
@@ -44,7 +38,7 @@ function App() {
       </nav>
 
       <main className="relative z-10">
-        <Hero onGetStarted={() => setView('chat')} />
+        <Hero onGetStarted={redirectToApp} />
         <ComparisonTable />
         <FrameSection />
         {/* <UseCases />
@@ -54,7 +48,7 @@ function App() {
         {/* <Technology /> */}
         {/* <About /> */}
         <ImageShowcase />
-        <FooterCTA onGetStarted={() => setView('chat')} />
+        <FooterCTA onGetStarted={redirectToApp} />
       </main>
 
       <footer className="bg-black py-8 border-t border-gray-800 relative z-10">

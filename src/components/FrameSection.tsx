@@ -1,6 +1,7 @@
 import React from 'react';
 import frameImg from '../assets/frame.png';
 import { motion } from 'framer-motion';
+import { redirectToApp } from '../helpers/helpers';
 
 const FrameSection: React.FC = () => {
     return (
@@ -30,7 +31,8 @@ const FrameSection: React.FC = () => {
 
                     <motion.button
                         whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        whileTap={{ scale: 0.95 }}                        
+                        onClick={redirectToApp}
                         className="mt-6 sm:mt-8 px-6 py-2 bg-[#72FCCB] text-black font-bold rounded-full hover:opacity-90 transition-opacity text-sm sm:text-base shadow-sm"
                     >
                         Lets do it

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { redirectToApp } from '../helpers/helpers';
 
 export default function ProfeshFeatures() {
     const features = [
@@ -51,6 +52,7 @@ export default function ProfeshFeatures() {
                 <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={redirectToApp}
                     className="mt-6 sm:mt-8 mx-auto block px-6 py-2 bg-[#72FCCB] text-black font-bold rounded-full hover:opacity-90 transition-opacity text-sm sm:text-base shadow-sm"
                 >
                     Finally!
