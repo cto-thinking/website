@@ -11,6 +11,7 @@ import FooterCTA from './components/FooterCTA'
 import ChatInterface from './components/ChatInterface'
 import InteractiveBackground from './components/InteractiveBackground'
 import FrameSection from './components/FrameSection'
+import LetterSection from './components/LetterSection'
 
 function App() {
   const [view, setView] = useState<'landing' | 'chat'>('landing')
@@ -48,6 +49,7 @@ function App() {
         {/* <UseCases />
         <StructureFeatures /> */}
         <ProfeshFeatures />
+        <LetterSection />
         {/* <Technology /> */}
         {/* <About /> */}
         <FooterCTA onGetStarted={() => setView('chat')} />
