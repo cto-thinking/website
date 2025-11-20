@@ -12,6 +12,7 @@ import ChatInterface from './components/ChatInterface'
 import InteractiveBackground from './components/InteractiveBackground'
 import FrameSection from './components/FrameSection'
 import LetterSection from './components/LetterSection'
+import ImageShowcase from './components/ImageShowcase'
 
 function App() {
   const [view, setView] = useState<'landing' | 'chat'>('landing')
@@ -52,6 +53,7 @@ function App() {
         <LetterSection />
         {/* <Technology /> */}
         {/* <About /> */}
+        <ImageShowcase />
         <FooterCTA onGetStarted={() => setView('chat')} />
       </main>
 
