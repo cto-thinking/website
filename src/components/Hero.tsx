@@ -20,7 +20,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
                     transition={{ duration: 0.6 }}
                 >
                     <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
-                        Untangle your thought spirals. For real this time.
+                        Overthinking right now?
                     </h1>
 
                     <div className="my-12 grid grid-cols-2 place-items-center gap-4 px-4 md:flex md:justify-center md:items-center md:gap-8">
@@ -34,7 +34,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
                         We get it.
                     </h2>
                     <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
-                        For when your brain feels like a browser with 100 tabs open. Structure your spiralling thoughts into clarity.
+                        Structure your spiralling thoughts into clarity.
                     </p>
 
                     <motion.button
@@ -43,10 +43,18 @@ export default function Hero({ onGetStarted }: HeroProps) {
                         onClick={onGetStarted}
                         className="inline-flex items-center px-8 py-4 text-lg font-bold text-gray-900 bg-accent rounded-full hover:bg-accent-hover transition-colors shadow-lg shadow-accent/20"
                     >
-                        Start Unspiraling
+                        Get Started right now
                         <ArrowRight className="ml-2 w-5 h-5" />
                     </motion.button>
                 </motion.div>
+
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mt-16 mb-4">
+                    Meet Fred
+                </h2>
+
+                <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+                    Designed to help you break out of your overthinking loops, gain clarity and take control of your thoughts in that very instance.
+                </p>
             </div>
 
             {/* Background decorative elements - Removed as per user request for pure white background */}

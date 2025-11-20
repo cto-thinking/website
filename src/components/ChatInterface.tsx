@@ -98,7 +98,7 @@ export default function ChatInterface({ onBack }: ChatInterfaceProps) {
                             </button>
                             <div>
                                 <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
-                                    IMOVERTHINKN
+                                    IMOVERTHINKING
                                 </h1>
                                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                                     Structure your spiral. Decide with clarity.
@@ -186,7 +186,7 @@ export default function ChatInterface({ onBack }: ChatInterfaceProps) {
                     {messages.length === 0 ? (
                         <div className="flex flex-col items-center justify-center h-full text-center py-20">
                             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                                Welcome to IMOVERTHINKN
+                                Welcome to IMOVERTHINKING
                             </h2>
                             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mb-8">
                                 Psychologically-backed AI that structures your spiralling thoughts into decisions—honoring your depth while breaking through paralysis.

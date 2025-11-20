@@ -47,6 +47,14 @@ export default function ProfeshFeatures() {
                         </motion.div>
                     ))}
                 </div>
+
+                <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 sm:mt-8 mx-auto block px-6 py-2 bg-[#72FCCB] text-black font-bold rounded-full hover:opacity-90 transition-opacity text-sm sm:text-base shadow-sm"
+                >
+                    Finally!
+                </motion.button>
             </div>
         </section>
     );
