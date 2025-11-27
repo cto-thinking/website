@@ -5,6 +5,7 @@ import ot1 from '../assets/ot1.png';
 import ot2 from '../assets/ot2.png';
 import ot3 from '../assets/ot3.png';
 import ot4 from '../assets/ot4.png';
+import fred from '../assets/fred.png';
 
 interface HeroProps {
     onGetStarted: () => void;
@@ -48,13 +49,19 @@ export default function Hero({ onGetStarted }: HeroProps) {
                     </motion.button>
                 </motion.div>
 
-                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mt-16 mb-4">
-                    Meet Fred
-                </h2>
-
-                <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
-                    Designed to help you break out of your overthinking loops, gain clarity and take control of your thoughts in that very instance.
-                </p>
+                <div className="mt-16 flex flex-col md:flex-row justify-center items-center gap-32 text-left">
+                    <div className="max-w-md">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                            Meet Fred
+                        </h2>
+                        <p className="text-xl text-gray-600 dark:text-gray-400">
+                            Designed to help you break out of your overthinking loops, gain clarity and take control of your thoughts in that very instance.
+                        </p>
+                    </div>
+                    <div className="flex-shrink-0">
+                        <img src={fred} alt="Fred" className="h-32 md:h-40 w-auto object-contain drop-shadow-2xl" />
+                    </div>
+                </div>
             </div>
 
             {/* Background decorative elements - Removed as per user request for pure white background */}
